@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-sizing: border-box;
+}
+html {
+  background: #070707;
+  color: azure;
+}
+body {
+  background-image: url('/images/farm.jpg');
+  background-position: center;
+}
+
+#header {
+  width: 100%;
+  height: 75vh;
+  background-image: url("/images/pexels-jonathan-petersson-1297307.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  padding: 10px 10%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.propic {
+  width: 140px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+}
+
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
+}
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+/* about */
+
+#about {
+  padding: 60px 0;
+  color: aliceblue;
+}
+
+/* Staff */
+#staff {
+  padding: 3px 0;
+}
+.staff-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.staff-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-right: 10px;
+}
+#contacts {
+  padding: 50px 0;
+}
+.contact-details div {
+  padding: 40px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.contact-details p {
+  margin-top: 30px;
+}
